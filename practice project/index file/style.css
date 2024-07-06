@@ -60,7 +60,7 @@ margin-bottom: 10px;
  .hero-btn {
    
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
 
@@ -78,12 +78,13 @@ line-height: 18px;
 letter-spacing: 5%;
 text-align: center;
 border: none;
+transition:.5s;
 }
 
 .btn:hover{
     color: brown;
     background-color: aqua;
-    transition: 1s;
+    border: 1px double red; 
 }
 
 
@@ -91,8 +92,12 @@ border: none;
 
 #card-box{
     width: 884px;
-    margin: 50px auto;
-   
+    margin: auto;
+    
+}
+.card-box-wrap{
+    margin-top:95px;
+
 }
 .card-contant{
     margin:50px auto;
@@ -154,8 +159,6 @@ margin: 32px 0px;
 }
 
 
-
-
 .card-content h2{
     color: rgb(16, 16, 16);
 font-family: Work Sans;
@@ -192,7 +195,7 @@ text-align: center;
 .card-btn
 {
     
-margin:27% auto;
+margin:250px auto 100px;
 text-align: center;
 width: 200px ;
 
@@ -209,6 +212,15 @@ width: 200px ;
     padding: 21px 32px 21px 32px;
     border:none;
     border-radius: 8px;
+    transition: .5s;
+}
+
+.btn-c:hover{
+    background-color: rgb(207, 207, 204);
+    color: chocolate;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
 }
 
 
@@ -217,15 +229,14 @@ width: 200px ;
 #soical-sec{
     background-image:url("../asset/images/image\ 2.png") ;
     width: 100%;
+    padding-bottom: 70px;
 }
 .social-wrap{
     text-align: center;
     padding:50px 0px 70px 0px;
 }
 .soical-title-desc{
-    /* text-align: center;
-
-    */
+    /* text-align: center; */
     width: 540px;
     margin: 50px auto;
 }
@@ -237,7 +248,7 @@ width: 200px ;
     font-weight: 400;
     line-height: 44px;
     letter-spacing: 0%;
-    text-align: center;   
+    /* text-align: center;    */
     margin-bottom: 20px;
 }
 .soical-title-desc p{
@@ -247,21 +258,21 @@ width: 200px ;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0%;
-    text-align: center;
+    /* text-align: center; */
     opacity: 0.6;
 }
 .socia-hr{
     width: 80%;
-    text-align: center;
-    display: block;
-    margin:30px  auto;
+    /* text-align: center; */
+    margin:30px  auto;  
+}
 
-    
-    
+.socia-hr hr{
+    color: rgb(254, 0, 0) !important;
 }
 .socia-hr> span{
     padding: 20px 10px 20px 10px;
-    display: inline-block;
+    display:block;
     /* box-sizing: border-box; */
 /* border-bottom: 1px solid rgba(16, 16, 16, 0.2);
 border-top: 1px solid rgba(16, 16, 16, 0.2); */
@@ -283,7 +294,145 @@ text-transform: capitalize;
    display: flex;
    justify-content:center;
    align-items: center;
-   gap: 30px;
+   gap: 50px;
    font-size: 30px;
+ margin-top: 30px;
+ margin-right: 40px;
+}
+
+
+.social-icon i{
+    position:absolute;
+    padding: 10px;
+    transition: .5s;
+}
+.social-icon i:hover{
+    color: aliceblue;
+/* background-color: aqua;
+border-radius: 10px;
+padding: 10px; */
 
 }
+
+
+   /* about section syle file */
+
+#about-sec{
+    display: flex;
+    max-width:1270px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+
+}
+.images{
+    width:50%;
+    
+}
+.images img
+{
+    width:100%;
+    border: 1px dashed rgb(62, 61, 61);
+
+}
+.about-content{
+    text-align: center;
+    margin: 80px 0px;
+    width:50%;
+    
+
+}
+
+.about-content h2{
+    color: rgb(16, 16, 16);
+font-family: Work Sans;
+font-size: 35px;
+font-weight: 500;
+line-height: 44px;
+letter-spacing: 0%;
+text-align: center;
+margin: 24px 30px;
+
+}
+
+.about-content p{
+    color: rgb(16, 16, 16);
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.6;
+margin: 24px 0px;
+
+} 
+
+.bottom-title{
+    color: rgb(16, 16, 16);
+font-family: Work Sans;
+font-size: 25px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.7;
+box-sizing: border-box;
+border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+border-top: 1px solid rgba(16, 16, 16, 0.2);
+padding: 20px 10px 20px 10px;
+margin: 40px 0px 30px 0px;
+
+}
+
+.about-icon{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.about-icon i{
+    color: aquamarine;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px 5px 10px 5px;
+    font-size:15px;
+    position:absolute;
+    transition:0.5s ;
+}
+
+.about-icon i:hover {
+    color:white;
+    background-color: aquamarine;
+    font-size:20px;
+ 
+}
+
+
+#foot{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    width:100%;
+    
+}
+.foot-container{
+    /* margin:auto; */
+    margin-right: 50px;
+    font-size: 20px;
+}
+.footr-icon{
+    /* margin:auto; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* module-5 practice end */
